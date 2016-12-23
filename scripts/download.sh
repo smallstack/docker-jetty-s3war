@@ -5,5 +5,4 @@ if [[ $WAR_URL ]]; then
   cp ROOT.war $JETTY_HOME/webapps
 else
   echo "=> Please provide a WAR_URL environment variable!"
-  exit 1
 fi
