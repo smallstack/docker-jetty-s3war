@@ -4,7 +4,9 @@ if [[ $WAR_URL ]]; then
   curl -L -o ROOT.war $WAR_URL
   echo "Copying war file to JETTY_HOME/webapps ($JETTY_HOME/webapps)"
   cp ROOT.war $JETTY_HOME/webapps
+  echo "echoing content of JETTY_HOME/webapps"
   cd $JETTY_HOME
+  ls -la
   echo "Starting jetty with command: java -jar start.jar jetty.home=$JETTY_HOME"
   java -jar start.jar jetty.home=$JETTY_HOME
 else
