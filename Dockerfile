@@ -1,4 +1,4 @@
-FROM jetty@9642e13a1a5e
+FROM jetty:9.3.12-jre8-alpine
 
 ENV WORKING_DIRECTORY /opt/work
 COPY scripts $WORKING_DIRECTORY
