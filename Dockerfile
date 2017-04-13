@@ -1,4 +1,4 @@
-FROM jetty:9.3.12-jre8-alpine
+FROM jetty:9.2
 
 ENV WORKING_DIRECTORY /opt/work
 COPY scripts $WORKING_DIRECTORY
